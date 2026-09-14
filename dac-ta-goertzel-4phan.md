@@ -36,8 +36,9 @@ s[n] = x[n] + c*s[n-1] - s[n-2],   n = 0..N-1,   s[-1] = s[-2] = 0
 P    = s[N-1]^2 + s[N-2]^2 - c*s[N-1]*s[N-2]
 ```
 
-Bin chuẩn (N=205, fs=8000): hàng 697→18, 770→20, 852→22, 941→24; cột 1209→31, 1336→34, 1477→38.
-Bin hài bậc 2: `kHarm = min(2*k_dominant, floor(N/2))`, chọn động theo tần số trội nhất trong khung.
+**Bin chuẩn** (N=205, fs=8000): hàng 697→18, 770→20, 852→22, 941→24; cột 1209→31, 1336→34, 1477→38 — tính theo `k = round(N·f/fs)`.
+
+**Bin hài bậc 2:** `kHarm = min(2*k_dominant, floor(N/2))`, trong đó `k_dominant` là bin có công suất lớn nhất trong 7 bin chuẩn của khung đang xét (`[~, dominant] = max(E(1:7))`). Chọn **động theo từng khung** — không cố định — vì mỗi khung có thể ứng với một phím khác nhau, hài bậc 2 chỉ có ý nghĩa so với đúng tần số đang trội. Nhân đôi vì hài bậc 2 = gấp đôi tần số cơ bản (k tỉ lệ thuận f); `min(..., floor(N/2))` để chặn không vượt tần số Nyquist, tránh bin bị gập ngược (aliasing).
 
 ## Ví dụ số kiểm chứng
 
