@@ -1,4 +1,4 @@
-# Gói đặc tả #4 — Bộ giải mã Goertzel
+# Bộ giải mã Goertzel
 
 ## I/O
 
