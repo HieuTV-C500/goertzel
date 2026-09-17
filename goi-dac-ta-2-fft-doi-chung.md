@@ -1,6 +1,6 @@
 # Gói đặc tả #2 — Khung FFT đối chứng
 
-**Tổ:** S2 + R1 (cùng Minh Tân) · **Hạn:** 18/09 · **Hàm liên quan:** `dtmf_decode_fft.m`
+**Hàm liên quan:** `dtmf_decode_fft.m`
 **Tham chiếu:** `CONTRACTS.md` — "Khung FFT đối chứng: 256 điểm, Hamming, hop 128"; dung sai tần số nhận ≤ ±1,5%.
 
 ---
@@ -34,7 +34,7 @@ Chữ ký hàm: `[keys, info] = dtmf_decode_fft(y, opt)` — giống hệt `dtmf
 
 ## Công thức
 
-**Cửa sổ Hamming** (n = 0..N-1):
+**Cửa sổ Hamming** (n = 0,1,...,N-1):
 
 ```
 w[n] = 0.54 - 0.46*cos(2*pi*n/(N-1))
@@ -43,7 +43,7 @@ w[n] = 0.54 - 0.46*cos(2*pi*n/(N-1))
 **Phổ FFT của khung đã cửa sổ:**
 
 ```
-X[k] = fft(w .* frame, N),   k = 0..N-1
+X[k] = fft(w .* frame, N),   k = 0,1,...,N-1
 ```
 
 **Công suất tại bin k** (cùng thang đo với `goertzel_power`, dùng `|X|^2` chứ không phải `|X|`):
