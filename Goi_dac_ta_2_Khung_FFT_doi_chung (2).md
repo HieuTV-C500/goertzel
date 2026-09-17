@@ -1,9 +1,5 @@
 # Gói đặc tả #2 — Khung FFT đối chứng
 
-**Dự án:** Hệ thống phát và giải mã tín hiệu DTMF
-**Tuần:** T1 — hạn 18/09
-**Người soạn:** Nguyễn Minh Hiếu (D55.B9.AT.011), cùng Minh Tân
-**Liên quan file mã nguồn:** `src/decode/dtmf_decode_fft.m`
 
 ---
 
