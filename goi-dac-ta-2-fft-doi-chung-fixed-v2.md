@@ -99,7 +99,7 @@ f_k        = k * Δf
 sai_lech_% = (f_k - f) / f * 100
 ```
 
-*(Nếu trình đọc của bạn không hỗ trợ hiển thị công thức LaTeX ở trên (khối `$$...$$`), dùng khối chữ ngay bên dưới mỗi công thức — nội dung giống hệt, chỉ khác cách trình bày.)*
+
 
 Dung sai theo `CONTRACTS.md`: **nhận** nếu |sai lệch| ≤ 1,5% · **từ chối** nếu |sai lệch| ≥ 3,5%.
 
