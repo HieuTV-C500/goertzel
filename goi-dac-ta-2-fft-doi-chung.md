@@ -100,7 +100,7 @@ sai_lech = (781,25 - 770) / 770 * 100 = +1,461%
 
 → 1,461% < 1,5% ⇒ bin k = 25 được **chấp nhận** làm đại diện cho tần số 770 Hz. Đây là mức sai lệch lớn nhất trong bảng (do 770 Hz nằm gần giữa hai bin FFT liên tiếp nhất), nhưng vẫn nằm trong dung sai nhận.
 
-*Ghi chú:* index bin tính từ 0 (theo quy ước DFT `k = 0..N-1`, không phải MATLAB 1-based); khi lập trình cần cộng 1 khi truy xuất `X(k+1)` trong MATLAB.
+*Ghi chú:* index bin tính từ 0 (theo quy ước DFT `k = 0,1,...,N-1`, không phải MATLAB 1-based); khi lập trình cần cộng 1 khi truy xuất `X(k+1)` trong MATLAB.
 
 ---
 
