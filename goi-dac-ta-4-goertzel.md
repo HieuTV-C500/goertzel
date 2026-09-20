@@ -1,8 +1,5 @@
 # Gói đặc tả #4 — Công thức truy hồi Goertzel
 
-**Tổ:** S2 + R2 · **Hạn:** 21/09 · **Hàm liên quan:** `goertzel_power.m`, `dtmf_decode_goertzel.m`
-**Tham chiếu:** `CONTRACTS.md` — "Khung Goertzel N = 205 → Δf ≈ 39,02 Hz"; dung sai tần số nhận ≤ ±1,5%.
-
 ---
 
 ## I/O
