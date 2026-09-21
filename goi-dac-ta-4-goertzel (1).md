@@ -1,7 +1,5 @@
 # Gói đặc tả #4 — Công thức truy hồi Goertzel
 
-**Tổ:** S2 + R2 · **Hạn:** 21/09 · **Hàm liên quan:** `goertzel_power.m`, `dtmf_decode_goertzel.m`
-**Tham chiếu:** `CONTRACTS.md` §"Thông số chốt sẵn" — Khung Goertzel N = 205 → Δf ≈ 39,02 Hz; dung sai tần số nhận ≤ ±1,5% · từ chối ≥ ±3,5%.
 
 ---
 
@@ -79,7 +77,6 @@ $$
 P = s[N-1]^2 + s[N-2]^2 - c*s[N-1]*s[N-2]
 ```
 
-*(Nếu trình đọc của bạn không hiển thị được khối `$$...$$` ở trên thì dùng khối chữ ngay bên dưới mỗi công thức — nội dung giống hệt.)*
 
 **Vì sao đúng:** đây là cách tính X[k] = Σ x[n]·e^(-j2πkn/N) mà không cần lượng giác phức tại từng bước — công suất |X[k]|² được lấy ra chỉ từ 2 giá trị s cuối. Độ phức tạp O(N) phép nhân thực mỗi bin, so với O(N log N) của FFT toàn phổ — hiệu quả hơn khi chỉ cần 8 bin cố định như DTMF, đổi lại không cho ra toàn bộ phổ như FFT (không dùng để vẽ spectrogram được).
 
