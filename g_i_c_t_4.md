@@ -1,8 +1,5 @@
 # Gói đặc tả #4 — Công thức truy hồi Goertzel
 
-**Tổ:** S2 + R2 · **Hạn:** 21/09 · **Hàm liên quan:** `goertzel_power.m`, `dtmf_decode_goertzel.m`
-**Tham chiếu:** `CONTRACTS.md` §"Thông số chốt sẵn" — Khung Goertzel $N = 205 \rightarrow \Delta f \approx 39,02 \text{ Hz}$; dung sai tần số nhận $\le \pm 1,5\%$ · từ chối $\ge \pm 3,5\%$.
-
 ---
 
 ## I/O
