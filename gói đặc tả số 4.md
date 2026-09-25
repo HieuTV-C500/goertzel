@@ -148,8 +148,3 @@ $$
 
 ---
 
-## Tham khảo
-
-- [1] G. Goertzel, "An algorithm for the evaluation of finite trigonometric series," *Amer. Math. Monthly*, vol. 65, no. 1, pp. 34–35, 1958.
-- [2] J. G. Proakis, D. G. Manolakis, *Digital Signal Processing: Principles, Algorithms, and Applications*, 4th ed., Pearson, 2007.
-- [3] Gói đặc tả #4 (tổ S2 + R2) — tài liệu này.
